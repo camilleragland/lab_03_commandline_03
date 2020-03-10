@@ -107,7 +107,8 @@ The directory is not empty.
 Write out the command that you used and what happened.
 ----------
 
-
+λ rm my_files
+rm: cannot remove 'my_files': Is a directory
 
 ==========
 15. MAKE SURE YOU'RE IN THE mtec1002-lab-03 directory!  
@@ -116,8 +117,15 @@ Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
 ----------
-
-
+rm -rf my_files
+'3D Objects'/             Downloads/              'My Documents'@                                                                                 ntuser.ini                                     SendTo@
+ AppData/                 Dropbox/                 NetHood@                                                                                       OneDrive/                                     'Start Menu'@
+'Application Data'@       Favorites/               NTUSER.DAT                                                                                    'OneDrive - The City University of New York'/   Templates@
+ Contacts/                Links/                   ntuser.dat.LOG1                                                                                Pictures/                                      Videos/
+ Cookies@                'Local Settings'@         ntuser.dat.LOG2                                                                                PrintHood@
+'Creative Cloud Files'/   MicrosoftEdgeBackups/    NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf                                        Recent@
+ Desktop/                 mtec1002-lab-03.tar.gz   NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms  'Saved Games'/
+ Documents/               Music/                   NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms   Searches/
 
 ==========
 16. There's a txt file version of a book located in the mtec1002-lab-03 folder.  It is in the following directory if you're in the lab folder:
@@ -128,8 +136,10 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
-
+cd books/other
+ls
+pg1232.txt
+cat pg1232.txt
 
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
@@ -140,7 +150,8 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-
+head pg1232.txt
+Title: The Prince
 
 
 ==========
@@ -153,7 +164,7 @@ Use tail on the file to show the contents of the end of the file.
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
 
-
+ tail pg1232.txt
 
 ==========
 19. Using the same file...
@@ -164,23 +175,32 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
-
-
+	less pg1232.txt
+	more pg1232.txt
+	space bar goes through text 
+	q returns to command line 
 
 ==========
 20. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+less - shows the beginning of file 
+more - shows the whole text 
+cat - shows all context of file 
+tail - end of file 
+head - beginning of file 
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-
+wc pg1232.txt
+5063(line) 52639(words) 305864(characters) pg1232.txt
 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+wc -l pg1232.txt
+	 5063 pg1232.txt
