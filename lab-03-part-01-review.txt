@@ -17,6 +17,7 @@ Write the command that you used to do this below:
 ----------
 
 
+	cd ~ 
 
 ==========
 2. Prove that you're in your home directory.
@@ -24,7 +25,7 @@ Write the command that you used to do this below:
 Write the command that you used to do this - as well as its output - below :
 ----------
 
-
+	pwd 
 
 ==========
 3. Are there any directories or files in your directory that have the word mtec1002 in it?
@@ -32,7 +33,7 @@ Write the command that you used to do this - as well as its output - below :
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
 
-
+	ls 
 
 ==========
 4. If there are directories or files in your home directory that have the word mtec1002 in them, list them below (otherwise skip this step):
@@ -66,6 +67,10 @@ This command should have a *flag* to specify the output file.  MAKE SURE TO NAME
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
 
+λ curl -o mtec1002-lab-03.tar.gz http://foureyes.github.io/mtec1002-spring2014/labs/
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   162  100   162    0     0    162      0  0:00:01 --:--:--  0:00:01  1723
 
 
 ==========
@@ -74,7 +79,12 @@ Write the command(s) that you used to download this file - as well as its output
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
 
-
+λ  tar mtec1002-lab-03.tar.gz -xvf
+Usage:
+  List:    tar -tf <archive-filename>
+  Extract: tar -xf <archive-filename>
+  Create:  tar -cf <archive-filename> [filenames...]
+  Help:    tar --help
 
 ==========
 8.  You should now have a directory called mtec1002-lab-03 in your home directory.  Verify that this directory exists.
@@ -88,15 +98,53 @@ Otherwise...
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
+cd ~ 
+ls -al 
 
-
-
+total 9798
+drwxr-xr-x 1 12403 197609       0 Mar 10 15:37  ./
+drwxr-xr-x 1 12403 197609       0 Feb  8 15:23  ../
+drwxr-xr-x 1 12403 197609       0 Feb 13 00:20 '3D Objects'/
+drwxr-xr-x 1 12403 197609       0 Jan 15 14:10  AppData/
+lrwxrwxrwx 1 12403 197609      30 Jan 15 14:10 'Application Data' -> /c/Users/12403/AppData/Roaming/
+drwxr-xr-x 1 12403 197609       0 Feb 13 00:20  Contacts/
+lrwxrwxrwx 1 12403 197609      58 Jan 15 14:10  Cookies -> /c/Users/12403/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 12403 197609       0 Feb 28 18:02 'Creative Cloud Files'/
+drwxr-xr-x 1 12403 197609       0 Mar 10 15:17  Desktop/
+drwxr-xr-x 1 12403 197609       0 Mar 10 15:26  Documents/
+drwxr-xr-x 1 12403 197609       0 Mar  8 16:51  Downloads/
+drwxr-xr-x 1 12403 197609       0 Jan 20 21:24  Dropbox/
+drwxr-xr-x 1 12403 197609       0 Feb 13 00:20  Favorites/
+drwxr-xr-x 1 12403 197609       0 Feb 13 00:20  Links/
+lrwxrwxrwx 1 12403 197609      28 Jan 15 14:10 'Local Settings' -> /c/Users/12403/AppData/Local/
+drwxr-xr-x 1 12403 197609       0 Jan 15 14:13  MicrosoftEdgeBackups/
+-rw-r--r-- 1 12403 197609     162 Mar 10 15:37  mtec1002-lab-03.tar.gz
+drwxr-xr-x 1 12403 197609       0 Feb 13 00:20  Music/
+lrwxrwxrwx 1 12403 197609      24 Jan 15 14:10 'My Documents' -> /c/Users/12403/Documents/
+lrwxrwxrwx 1 12403 197609      66 Jan 15 14:10  NetHood -> '/c/Users/12403/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+-rw-r--r-- 1 12403 197609 6815744 Feb 13 00:19  NTUSER.DAT
+-rw-r--r-- 1 12403 197609 1777664 Jan 15 14:10  ntuser.dat.LOG1
+-rw-r--r-- 1 12403 197609  262144 Jan 15 14:10  ntuser.dat.LOG2
+-rw-r--r-- 1 12403 197609   65536 Feb  4 19:02  NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+-rw-r--r-- 1 12403 197609  524288 Feb  4 19:02  NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 12403 197609  524288 Jan 15 14:10  NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 12403 197609      20 Jan 15 14:10  ntuser.ini
+drwxr-xr-x 1 12403 197609       0 Jan 15 14:21  OneDrive/
+drwxr-xr-x 1 12403 197609       0 Mar  8 14:39 'OneDrive - The City University of New York'/
+drwxr-xr-x 1 12403 197609       0 Feb 13 00:20  Pictures/
+lrwxrwxrwx 1 12403 197609      66 Jan 15 14:10  PrintHood -> '/c/Users/12403/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 12403 197609      55 Jan 15 14:10  Recent -> /c/Users/12403/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 12403 197609       0 Feb 13 00:20 'Saved Games'/
+drwxr-xr-x 1 12403 197609       0 Feb 13 00:20  Searches/
+lrwxrwxrwx 1 12403 197609      55 Jan 15 14:10  SendTo -> /c/Users/12403/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 12403 197609      59 Jan 15 14:10 'Start Menu' -> '/c/Users/12403/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 12403 197609      58 Jan 15 14:10  Templates -> /c/Users/12403/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 12403 197609       0 Feb 13 00:20  Videos/
 ==========
 9.  What directories are in the mtec1002-lab-03 folder?
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
 
 
 ==========
@@ -112,8 +160,10 @@ Write the command(s) (including going home) that you used to do this below:
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
-
+cd mtec1003-lab-03/books/science-fiction
+ls
+pg84.txt	pg86.txt
+	
 
 ==========
 12.  Again, go back to your home directory.  Now... go to the science-fiction directory using an absolute path!  Verify that you're in the right directory using pwd.
@@ -134,7 +184,7 @@ OPTIONAL
 
 Write the command(s) that you used to do this below:
 ----------
-
+	cd ../.. 
 ==========
 OPTIONAL
 15. Create a compressed archive of the logs folder - that is... take the contents of logs and create a single archive (.tar), and compress (.gz)
