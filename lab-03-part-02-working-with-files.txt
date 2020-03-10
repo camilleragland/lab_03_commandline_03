@@ -37,14 +37,15 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+foo.txt
 
 ==========
 7. Create another new file using touch.
 
 $ touch bar.txt
 ----------
-
+λ ls
+bar.txt  foo.txt
 
 
 ==========
@@ -52,7 +53,10 @@ $ touch bar.txt
 
 Copy and paste the output below.
 ----------
-
+drwxr-xr-x 1 12403 197609 0 Mar 10 16:01 ./
+drwxr-xr-x 1 12403 197609 0 Mar 10 15:59 ../
+-rw-r--r-- 1 12403 197609 0 Mar 10 16:01 bar.txt
+-rw-r--r-- 1 12403 197609 0 Mar 10 16:00 foo.txt
 
 
 ==========
@@ -61,36 +65,40 @@ Copy and paste the output below.
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
-
-
+cp bar.txt baz.txt
+λ ls
+bar.txt  bax.txt  foo.txt
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+rm bar.txt 
+λ ls
+bax.txt  foo.txt
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
-
-
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
 
-
+λ mv foo.txt qux.txt
+λ ls
+bax.txt  qux.txt
 
 ==========
 12. Go up one directory so that you're in ~/mtec1002-lab-03.
 [NO OUTPUT]
 ----------
-
-
-
+cd .. 
+ls
 ==========
 13. Try removing the directory called my_files using rmdir.
 
 Write out the command that you used and what happened.
 ----------
-
+λ rmdir my_files
+The directory is not empty.
 
 
 ==========
